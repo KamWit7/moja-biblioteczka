@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <script src="./js/script.js" defer></script>
+
+    <title>Books!</title>
+  </head>
+  <body>
+    <div class="flex bg">
+      <section>
+        <form class="form container">
+          <label for="title">Books Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            title="Book's title may contain onlu letters, apostrophe, dash and spaces."
+            minlength="1"
+            required
+          />
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            minlength="3"
+            required
+          />
+
+          <div class="wrapper wrapper--margin-t">
+            <label for="genre">Film Genre</label>
+            <select id="genre" name="genre">
+              <option value="sci-fi" selected>sci-fi</option>
+              <option value="fantasy">fantasy</option>
+              <option value="horror">horror</option>
+            </select>
+          </div>
+
+          <div class="wrapper">
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <button class="btn" type="submit">Save book</button>
+        </form>
+      </section>
+
+      <section class="align-top">
+        <p>Book's to read...</p>
+        <ul class="books"></ul>
+      </section>
+    </div>
+  </body>
+</html>
