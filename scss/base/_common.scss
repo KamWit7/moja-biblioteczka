@@ -38,6 +38,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 p {
@@ -131,4 +132,8 @@ label {
   align-self: flex-start;
 
   letter-spacing: 1px;
+}
+
+.book {
+  font-size: 20px;
 }

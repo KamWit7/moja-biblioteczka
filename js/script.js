@@ -10,6 +10,7 @@ const displayBooks = (books) => {
     let bookItem = create("li")
     let p = create("p")
 
+    p.classList.add("book")
     p.innerHTML = `Title: ${title}, </br> Author: ${author}, </br> Genre: ${genre}, Rating: ${rating}`
     bookItem.append(p)
     booksList.append(bookItem)
