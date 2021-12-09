@@ -33,7 +33,7 @@ body {
 
 .bg {
   height: 100%;
-  background: url("./../../book.png") center #202124;
+  background: url("./../book.png") center #202124;
   background-size: cover;
 }
 
