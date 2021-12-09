@@ -6,18 +6,18 @@ const form = qs(".form")
 
 const displayBooks = (books) => {
   booksList.firstElementChild ? (booksList.innerHTML = "") : ""
+
   books.forEach(({ title, author, genre, rating }) => {
     let bookItem = create("li")
     let p = create("p")
 
     p.classList.add("book")
     p.innerHTML = `Title: ${title}, </br> Author: ${author}, </br> Genre: ${genre}, Rating: ${rating}`
+   
     bookItem.append(p)
     booksList.append(bookItem)
   })
 }
-
-const getBooks = () => JSON.parse(localStorage.getItem("books"))
 
 const addCurentBooks = (e) => {
   e.preventDefault()
@@ -39,6 +39,8 @@ const addCurentBooks = (e) => {
   displayBooks(books)
   form.reset()
 }
+
+const getBooks = () => JSON.parse(localStorage.getItem("books"))
 
 getBooks()
   ? displayBooks(getBooks())

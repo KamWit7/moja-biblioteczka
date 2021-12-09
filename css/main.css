@@ -19,6 +19,21 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  display: block;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,21 +54,6 @@ body {
   height: 100%;
   background: url("./../book.png") center #202124;
   background-size: cover;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-p {
-  display: block;
-  margin-bottom: 15px;
-}
-
-label {
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .container {
@@ -151,11 +151,11 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 400px;
   margin-top: 100px;
   margin-left: -40px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   letter-spacing: 1px;
 }
 
