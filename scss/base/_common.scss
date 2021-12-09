@@ -57,6 +57,10 @@ label {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+
+  &--margin-l {
+    margin-left: 40px;
+  }
 }
 
 #author,

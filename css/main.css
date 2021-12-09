@@ -68,6 +68,10 @@ label {
           flex-direction: column;
 }
 
+.container--margin-l {
+  margin-left: 40px;
+}
+
 #author,
 #title {
   background-color: #e8eaede5;
