@@ -31,6 +31,10 @@ body {
           justify-content: space-evenly;
 }
 
+.form {
+  width: 20vw;
+}
+
 .bg {
   height: 100%;
   background: url("./../book.png") center #202124;
